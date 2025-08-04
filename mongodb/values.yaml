@@ -1,0 +1,3 @@
+statefulset:
+  imageUrl: yadaveshnithin/mongodb
+  imageVersion: v1 
