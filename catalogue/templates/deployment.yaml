@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: catalogue
-          image: yadaveshnithin/catalogue:v1
+          image: "{{ .Values.statefulset.imageUrl }}:{{ .Values.statefulset.imageVersion }}"
           resources:
             requests:
               cpu: "50m"

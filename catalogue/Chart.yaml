@@ -1,5 +1,5 @@
 apiVersion: v2
-name: mysql
+name: catalogue
 version: 1.0.0
-description: "description mysql for helm chart"
+description: "description catalogue for helm chart"
 appVersion: v1

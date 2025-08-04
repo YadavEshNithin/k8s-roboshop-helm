@@ -1,3 +1,6 @@
 statefulset:
-  imageUrl: yadaveshnithin/mysql
+  imageUrl: yadaveshnithin/catalogue
   imageVersion: v1 
+hpa:
+  maxReplicas: 10
+  utilization: 10
