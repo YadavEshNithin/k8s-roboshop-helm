@@ -4,15 +4,15 @@ metadata:
   name: redis
   namespace: roboshop
   labels:
-    component: redis
-    project: roboshop
-    tier: database
+    component: redis-service
 spec:
   selector:
     component: redis
     project: roboshop
     tier: database
-  ports:
-    - protocol: TCP
-      port: 6379 
-      targetPort: 6379 
+  ports:  
+  - protocol: TCP
+    port: 6379
+    targetPort: 6379
+
+---
