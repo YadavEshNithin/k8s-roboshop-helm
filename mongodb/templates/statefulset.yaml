@@ -26,11 +26,11 @@ spec:
       - name: mongodb
         image: "{{ .Values.statefulset.imageUrl }}:{{ .Values.statefulset.imageVersion }}"
         volumeMounts:
-        - name: mongodb_data
+        - name: mongodb-data
           mountPath: /data/db
   volumeClaimTemplates:
   - metadata:
-      name: mongodb_data
+      name: mongodb-data
     spec:
       accessModes: [ "ReadWriteOnce" ]
       storageClassName: "ebs-sc-roboshop"
